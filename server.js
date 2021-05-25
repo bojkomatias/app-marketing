@@ -47,7 +47,7 @@ fastify.get("/", function(request, reply) {
   reply.view("/src/pages/index.hbs", params);
 });
 
-// A POST route to handle and react to form submissions 
+// A POST route to handle and react to form submissions
 fastify.post("/", function(request, reply) {
   let params = { seo: seo };
   // the request.body.color is posted with a form submission
